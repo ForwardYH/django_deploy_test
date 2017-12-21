@@ -12,8 +12,8 @@ import sys
 
 from django.core.wsgi import get_wsgi_application
 
-sys.append("/home/ubuntu/.pyenv/versions/django-server/lib/python3.5/site-packages")
-sys.append("/home/ubuntu/workspace/practice")
+sys.path.append("/home/ubuntu/.pyenv/versions/django-server/lib/python3.5/site-packages")
+sys.path.append("/home/ubuntu/workspace/practice")
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "practice.settings.production")
 
